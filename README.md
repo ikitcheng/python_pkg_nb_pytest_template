@@ -19,7 +19,7 @@ my_notebook.ipynb
 pytest.ini           <- Use so pytest can locate pkgs from ./
 .env                 <- Use so VsCode and its extention can locate pkgs from ./
 ```
-* If we don't want to keep writing the package name when importing our own scripts, then create a pytest config file `pytest.ini` file in the root directory. Inside, write 
+* If we don't want to keep writing the package name when importing our own scripts in your module files, then create a pytest config file `pytest.ini` file in the root directory. Inside, write 
 ```ini
 [pytest]
 pythonpath = . my_pkg
