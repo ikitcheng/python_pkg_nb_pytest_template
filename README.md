@@ -10,7 +10,11 @@ my_pkg/
     my_script_2.py
     main.py
 tests/
+    __init__.py
+    test_multiply.py
     test_myscript.py
+__init__.py
+multiply.py
 my_notebook.ipynb
 pytest.ini           <- Use so pytest can locate pkgs from ./src 
 .env                 <- Use so VsCode and its extention can locate pkgs from ./src
