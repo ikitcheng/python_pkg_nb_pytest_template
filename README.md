@@ -20,7 +20,7 @@ pytest.ini           <- Use so pytest can locate pkgs from ./src
 [pytest]
 pythonpath = . my_pkg
 ```
-This allows pytest to locate module files in `my_pkg`. In the test files, you would still need to import your scripts prefixed with the package name. You may now run `python -m pytest` or `pytest` in the root directory. 
+This allows pytest to locate module files in `my_pkg`. In the test files, you would still need to import your scripts prefixed with the package name. You may now run `python -m pytest` or `pytest` in the root directory. If the root directory is also a package itself (i.e. there is an `__init__.py` file) and it contains modules, then in your test files you could use relative imports (e.g. using `..moduleName`). 
 
 To invoke `main.py`, run `python my_pkg/main.py` in the root. 
 
