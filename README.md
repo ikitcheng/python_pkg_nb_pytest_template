@@ -16,8 +16,8 @@ tests/
 __init__.py
 multiply.py
 my_notebook.ipynb
-pytest.ini           <- Use so pytest can locate pkgs from ./src 
-.env                 <- Use so VsCode and its extention can locate pkgs from ./src
+pytest.ini           <- Use so pytest can locate pkgs from ./
+.env                 <- Use so VsCode and its extention can locate pkgs from ./
 ```
 * If we don't want to keep writing the package name when importing our own scripts, then create a pytest config file `pytest.ini` file in the root directory. Inside, write 
 ```ini
